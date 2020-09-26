@@ -1,12 +1,20 @@
-### TEMPLATE HTML CSS 
+### TEMPLATE HTML CSS [EN COURS]
+
+Le template est en cours donc tous les fonctionnalités ne sont pas encore implémenté .
 
 ![header](Screenshots/orders_2x_4x.png)
 
-## Fonctionnalités disponible sur la page
+## Fonctionnalités qui seront disponible sur la page
 
 - menu vertical et horizontal
 - pagination
 - fenêtre Modal
+
+# Reste à faire 
+
+- refactoring du code pour mieux l'organiser
+- affichage des modals
+- modifier le menu et les sidebar pour les rendre plus attractifs comme sur l'image
 
 ## Structure du projet
 
@@ -24,7 +32,7 @@ Le dossier vendor apparait à la racine du projet une fois les dépendances inst
   <tbody>
     <tr>
       <td align="center" valign="middle">
-        <a href="https://getbootstrap.com/" target="_blank">
+        <a href="https://v5.getbootstrap.com/" target="_blank">
           <img width="148px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png">
         </a>
       </td>
@@ -43,9 +51,31 @@ Le dossier vendor apparait à la racine du projet une fois les dépendances inst
           <img width="148px" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Logo-composer-transparent.png">
         </a>
       </td>
+      <td align="center" valign="middle">
+              <a href="https://fontawesome.com/" target="_blank">
+                <img width="148px" src="https://www.drupal.org/files/project-images/font_awesome_logo.png">
+              </a>
+       </td>
     </tr>
   </tbody>
  </table>
+ 
+ ## Comment installer sass et composer
+ 
+ ### sass 
+ Sur windows veuillez avant tout installer <b> nodejs </b> , puis ensuite vous pourrez bénéficier de la commande npm . si vous avez déjà npm :
+ 
+  ```bash
+  > npm install -g sass
+  ```
+Cette commande installera le package sass globalements sur votre système .
+
+Pour vérifier que sass est bien présent , essayer la commande :
+
+  ```bash
+  > sass -v
+  ```
+
  
  ## Comment apporter ses modifications sur le projet
  
@@ -77,6 +107,8 @@ Ensuite Ajouter la configuration suivante en créant votre fileWatcher :
 La configuration 
 
 ![header](Screenshots/configuration.png)
+
+Une fois finie , Lorsque vous modifier un fichier scss , immédiatement une compilation s'en suit pour générer un fichier style.css dans le dossier css .
 
 ### Contributeurs
 
