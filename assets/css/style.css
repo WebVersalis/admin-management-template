@@ -1,0 +1,17 @@
+/* green */
+/* blue */
+table {
+  width: 100%;
+  background: white; }
+
+.custom-table {
+  border-spacing: 0; }
+  .custom-table thead th {
+    text-align: start;
+    color: #d4d4d4;
+    text-transform: capitalize; }
+  .custom-table tbody td {
+    color: #777777;
+    text-align: start; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAW;AAIX,UAAU;ACJV,KAAK;EACH,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,KAAK;;AAGnB,aAAa;EACX,cAAc,EAAE,CAAC;EAKjB,sBAAU;IACR,UAAU,EAAE,KAAK;IACjB,KAAK,EDHI,OAAO;ICIhB,cAAc,EAAE,UAAU;EAG5B,sBAAU;IACR,KAAK,EDTK,OAAO;ICUjB,UAAU,EAAE,KAAK",
+"sources": ["../scss/base/_colors.scss","../scss/modules/table/_table.scss"],
+"names": [],
+"file": "style.css"
+}

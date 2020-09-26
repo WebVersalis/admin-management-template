@@ -1,0 +1,4 @@
+/vendor/
+/assets/scss/.sass-cache/
+/.idea/
+/composer.lock

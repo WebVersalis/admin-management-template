@@ -1,0 +1,22 @@
+table{
+  width: 100%;
+  background: white;
+}
+
+.custom-table{
+  border-spacing: 0;
+
+  & thead tr{
+  }
+
+  & thead th{
+    text-align: start;
+    color: $color-grey;
+    text-transform: capitalize;
+  }
+
+  & tbody td{
+    color: $color-black;
+    text-align: start;
+  }
+}
