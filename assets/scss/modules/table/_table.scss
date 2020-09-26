@@ -5,6 +5,9 @@ table{
 
 .custom-table{
   border-spacing: 0;
+  & img{
+    width: 50px;
+  }
 
   & thead tr{
   }
@@ -16,7 +19,7 @@ table{
   }
 
   & tbody td{
-    color: $color-black;
     text-align: start;
+    font-weight: bold;
   }
 }

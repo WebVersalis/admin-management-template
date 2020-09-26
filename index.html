@@ -4,33 +4,244 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
+    <!-- css.gg -->
+    <link rel="stylesheet" href="assets/library/fontawesome/css/all.min.css">
 </head>
 <body>
 
+<div class="container-fluid">
+    <!-- sidebar gauche-->
+    <div class="sidebar">
+        <div class="sidebar-icons d-flex flex-column align-items-center">
+            <a href="" class="mt-2 mb-3">
+                <i class="fas fa-shopping-basket fa-2x"></i>
+            </a>
+            <a href="#"><i class="far fa-address-book fa-2x"></i></a>
+            <a href="#"><i class="far fa-address-card fa-2x text-info"></i></a>
+            <a href="#"><i class="far fa-edit fa-2x"></i></a>
+            <a href="#"><i class="fas fa-database fa-2x"></i></a>
+            <a href="#"><i class="fas fa-paper-plane fa-2x"></i></a>
+            <a class="mt-5" href="#"><i class="fas fa-phone-alt fa-2x"></i></a>
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="pt-2 pl-5 menu d-flex align-content-between justify-content-between">
+        <!-- menu gauche -->
+        <div class="menu-left">
+            <p class="text-capitalize">
+                        <span class="">
+                            <i class="fas fa-bolt"></i>
+                        </span>
+                your productivity score :
+                <span class="text-capitalize font-weight-bold">88 (Good) </span>
+            </p>
+        </div>
+        <!-- menu droit -->
+        <div class="menu-right">
+            <a href="" class="mr-2">
+                <i class="fas fa-comment-alt"></i>
+                <span>chats <span class="badge bg-danger">2</span></span>
+            </a>
+            <a href="" class="mr-2">
+                <i class="fas fa-sliders-h"></i>
+                <span>Settings</span>
+            </a>
+            <a href="">
+                <i class="fas fa-user-circle"></i>
+                <span>Account</span>
+            </a>
+        </div>
+    </div>
 
-<table class="custom-table">
-    <thead>
-    <tr>
-        <th>#</th>
-        <th>order id</th>
-        <th>customer</th>
-        <th>total</th>
-        <th>profil</th>
-        <th>status</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td><input type="checkbox"></td>
-        <td>886485</td>
-        <td>2 min ago</td>
-        <td>guelade kevin <span class="rank-table">4.6</span></td>
-        <td>10.000 FCFA</td>
-        <td>10.000 FCFA <span class="badge-table">85%</span></td>
-        <td><span class="btn-table">en cours</span></td>
-    </tr>
-    </tbody>
-</table>
+    <!-- contenu du milei où le tableauest situé -->
+    <div class="row pt-5">
+        <div class="col-10 mt-5 content">
+            <!-- en tête du tableau -->
+            <div class="d-flex align-items-center">
+                <div class="col-10 d-flex align-items-center">
+                    <div class="w-auto mr-2">
+                        <h2 class="font-weight-bold">Orders</h2>
+                    </div>
+                    <div class="w-25 mr-2">
+                        <select class="form-select">
+                            <option value="0">status all</option>
+                        </select>
+                    </div>
+
+                    <div class="w-25 mr-2">
+                        <select class="form-select">
+                            <option value="0">date today</option>
+                        </select>
+                    </div>
+
+                    <div class="w-25 mr-2">
+                        <input type="text" placeholder="Quick search" class="form-control">
+                    </div>
+                </div>
+
+                <div class="ml-5 col-2">
+                    <a class="link text-capitalize">
+                        <span><i class="fas fa-plus"></i> new order</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-5 mb-3">
+                <span class="text-info text-uppercase">active now</span>
+            </div>
+
+            <table class="table custom-table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>order id</th>
+                    <th>customer</th>
+                    <th>total</th>
+                    <th>profil</th>
+                    <th>status</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>886485</td>
+                    <td>2 min ago</td>
+                    <td>guelade kevin <i class="fas fa-star text-danger"></i> 4.6</td>
+                    <td>10.000 FCFA</td>
+                    <td>10.000 FCFA <span class="badge bg-dark">85%</span></td>
+                    <td><span class="btn-blue">pending <i class="fas fa-caret-down"></i></span></td>
+                    <td><i class="fas fa-caret-down "></i></td>
+
+                </tr>
+                <tr class="border">
+                    <td><input type="checkbox"></td>
+                    <td>886485</td>
+                    <td>2 min ago</td>
+                    <td>guelade kevin <i class="fas fa-star text-danger"></i> 4.6</td>
+                    <td>10.000 FCFA</td>
+                    <td>10.000 FCFA <span class="badge bg-dark">85%</span></td>
+                    <td><span class="btn-green">pending <i class="fas fa-caret-down"></i></span></td>
+                    <td><i class="fas fa-caret-down"></i></td>
+                </tr>
+                <tr class="border">
+                    <td></td>
+                    <td colspan="6">
+                        <table class="table custom-table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>SKU</th>
+                                <th>Pice</th>
+                                <th>Qty</th>
+                                <th>Disc.</th>
+                                <th>Total</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody class="text-grey-dark">
+                            <tr>
+                                <td><img class="img-fluid" src="assets/images/netgear.png" alt=""></td>
+                                <td>NETGEAR</td>
+                                <td>30.000 FCFA</td>
+                                <td>x 1</td>
+                                <td class="text-danger">5%</td>
+                                <td>50.000 FCFA></td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-fluid" src="assets/images/netgear.png" alt=""></td>
+                                <td>routeur cisco</td>
+                                <td>50.000 FCFA</td>
+                                <td>x 1</td>
+                                <td class="text-danger">5%</td>
+                                <td>50.000 FCFA></td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-danger"></td>
+                                <td>sub total</td>
+                                <td>100.000 FCFA</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-danger"></td>
+                                <td>TVA</td>
+                                <td>10.000 FCFA</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-danger"></td>
+                                <td>Discount</td>
+                                <td>10.000 FCFA</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>886485</td>
+                    <td>2 min ago</td>
+                    <td>guelade kevin <i class="fas fa-star text-danger"></i> 4.6</td>
+                    <td>10.000 FCFA</td>
+                    <td>10.000 FCFA <span class="badge bg-dark">85%</span></td>
+                    <td><span class="btn-blue">pending <i class="fas fa-caret-down"></i></span></td>
+                    <td><i class="fas fa-caret-down "></i></td>
+
+                </tr>
+
+                </tbody>
+            </table>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Precédent</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">suivant</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- sidebar droit -->
+        <div class="col-2 sidebarRight">
+            <h5>OVERVIEW</h5>
+            <div>
+                <span class="title">orders today</span> <br>
+                <span class="data">239</span>
+            </div>
+            <div>
+                <span class="title">pending today</span><br>
+                <span class="data">12</span>
+            </div>
+            <div>
+                <span class="title">Delivred</span><br>
+                <span class="data">123 <sup class="text-danger">-3%</sup> </span>
+            </div>
+            <div>
+                <span class="title">Cancelled</span><br>
+                <span class="data">25</span>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>

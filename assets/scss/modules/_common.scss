@@ -1,0 +1,14 @@
+.link {
+  color: darken($color-blue, 30);
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: darken($color-blue, 50);
+  }
+}
+
+.content{
+  padding-left: 100px;
+  padding-right: 50px;
+}
