@@ -1,17 +1,43 @@
-.btn-blue{
+.btn-blue {
   border-radius: 100px;
   padding: 5px;
-  color: darken($color-blue,40);
+  color: darken($color-blue, 40);
   background: $color-blue;
+
+  &::after {
+    border: 4px solid $color-blue;
+    border-top-color: darken($color-blue, 40);
+  }
 }
 
-.btn-green{
-  border-radius: 100px;
-  padding: 5px;
-  color: darken($color-green,70);
+
+.btn-table {
+  overflow: hidden;
+  position: relative;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  border: 0;
+  color: darken($color-green, 70);
   background: $color-green;
-}
+  width: 150px;
+  border-radius: 20px;
 
-.btn-table{
+  &:focus {
+    outline: 0;
+    font-weight: 700;
+  }
 
+  &::after {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    content: "";
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border: 4px solid $color-green;
+    border-top-color: darken($color-green, 70);
+  }
 }

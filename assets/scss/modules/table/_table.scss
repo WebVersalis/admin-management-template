@@ -1,25 +1,41 @@
-table{
+table {
+  font-family: sans-serif;
   width: 100%;
   background: white;
 }
 
-.custom-table{
+.custom-table {
   border-spacing: 0;
-  & img{
+
+  & img {
     width: 50px;
   }
 
-  & thead tr{
+  & thead tr {
+
   }
 
-  & thead th{
+  & thead th {
     text-align: start;
     color: $color-grey;
     text-transform: capitalize;
   }
 
-  & tbody td{
+  & tbody td {
+    font-size: 12px;
     text-align: start;
     font-weight: bold;
+  }
+
+  & tbody tr {
+    & .fa-caret-down {
+      padding: 3px;
+      border: 1px solid rgba(0,0,0,.2);
+      border-radius: 5px;
+    }
+
+    &:hover {
+      background: lighten($color-black, 50);
+    }
   }
 }
