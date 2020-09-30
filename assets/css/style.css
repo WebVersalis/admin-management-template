@@ -7092,23 +7092,12 @@ button.close {
 body {
   font-family: 'Roboto', sans-serif; }
 
-.menu {
-  position: fixed;
-  width: 100%;
-  background: white;
-  z-index: 1;
-  border-bottom: 0.1px solid #d4d4d4; }
-  .menu .menu-left {
-    padding-left: 2.9rem; }
-  .menu .menu-right {
-    margin-right: 2rem;
-    text-align: left; }
-  .menu a {
-    text-transform: capitalize;
-    color: #777777;
-    text-decoration: none; }
-    .menu a:hover {
-      color: #111111; }
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
 
 table {
   width: 100%;
@@ -7170,21 +7159,59 @@ table {
     font-weight: bold;
     font-size: 1.5rem; }
 
-.sidebar {
+.sidebar-left {
+  box-shadow: 0 2px 20px 8px rgba(126, 142, 177, 0.12);
+  width: 65px;
   position: fixed;
-  left: 0;
   top: 0;
-  width: 60px;
+  left: 0;
   height: 100vh;
   background: white;
-  z-index: 10;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.15); }
-  .sidebar .sidebar-icons {
-    padding-top: 10px; }
-    .sidebar .sidebar-icons i {
-      color: #777777;
-      margin-bottom: 2rem; }
-      .sidebar .sidebar-icons i:hover {
-        color: #1032ff; }
+  display: flex;
+  flex-direction: column; }
+  .sidebar-left .theme-logo {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-self: center;
+    padding: 7px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.11); }
+  .sidebar-left .categories {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin-bottom: 0;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center; }
+    .sidebar-left .categories li.menu {
+      position: relative;
+      list-style: none;
+      margin-bottom: 25px;
+      padding: 8px 0; }
+      .sidebar-left .categories li.menu i {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center; }
+      .sidebar-left .categories li.menu.active {
+        border-right: 2px solid #0d6efd;
+        background-color: #ecebf5;
+        width: 100%; }
+        .sidebar-left .categories li.menu.active a {
+          color: #0d6efd; }
+      .sidebar-left .categories li.menu a {
+        color: #777777;
+        transition: 0.3s; }
+        .sidebar-left .categories li.menu a:hover {
+          color: black; }
+  .sidebar-left .menu-bottom .menu a {
+    position: absolute;
+    bottom: 20px; }
+  .sidebar-left .menu-bottom a {
+    color: #777777; }
 
 /*# sourceMappingURL=style.css.map */

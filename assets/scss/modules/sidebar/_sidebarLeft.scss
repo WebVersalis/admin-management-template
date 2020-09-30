@@ -1,23 +1,78 @@
-.sidebar {
+.sidebar-left {
+  box-shadow: 0 2px 20px 8px rgba(126, 142, 177, 0.12);
+  width: 65px;
   position: fixed;
-  left: 0;
   top: 0;
-  width: 60px;
+  left: 0;
   height: 100vh;
   background: white;
-  z-index: 10;
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05), inset 0 -1px 0 rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
 
-  & .sidebar-icons {
-    padding-top: 10px;
 
-    & i {
-      color: $color-black;
-      margin-bottom: 2rem;
+  & .theme-logo {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-self: center;
+    padding: 7px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.11);
+  }
 
-      &:hover {
-        color: darken($color-blue, 40);
+  & .categories {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin-bottom: 0;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+
+    & li.menu {
+      position: relative;
+      list-style: none;
+      margin-bottom: 25px;
+      padding: 8px 0;
+
+      & i {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
       }
+
+      &.active {
+        border-right: 2px solid $color-pink;
+        background-color: #ecebf5;
+        width: 100%;
+
+        & a {
+          color: $color-pink;
+        }
+      }
+
+      & a {
+        color: $color-black;
+        transition: 0.3s;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+
+  & .menu-bottom {
+    & .menu a {
+      position: absolute;
+      bottom: 20px;
+    }
+
+    & a {
+      color: $color-black;
     }
   }
 }
