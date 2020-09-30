@@ -1,0 +1,44 @@
+.header {
+  font-family: sans-serif;
+  padding-top: 10px;
+  display: flex;
+  height: 3rem;
+  box-shadow: 0 2px 20px 8px rgba(126, 142, 177, 0.12);
+
+  & .left {
+    padding-left: 7rem;
+    width: 40%;
+
+    & i {
+      color: $color-pink;
+    }
+  }
+
+  & .center {
+    overflow: hidden;
+    width: 40%;
+
+    & li a {
+      float: right;
+      color: $color-black;
+      text-transform: capitalize;
+      transition: 0.5s;
+
+      &:hover {
+        color: $color-pink;
+      }
+    }
+
+    & li a:last-child {
+      margin-right: 4rem;
+    }
+  }
+
+  & .right {
+    background: #f9f8ff;
+    width: 20%;
+    color: darken($color-grey, 10);
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+}

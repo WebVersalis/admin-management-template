@@ -7099,6 +7099,47 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start; }
 
+#content {
+  display: flex;
+  padding: 0 10px 0 20px;
+  overflow: hidden;
+  width: 77%;
+  margin-top: 60px;
+  margin-bottom: 0;
+  margin-left: 65px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all; }
+
+.header {
+  font-family: sans-serif;
+  padding-top: 10px;
+  display: flex;
+  height: 3rem;
+  box-shadow: 0 2px 20px 8px rgba(126, 142, 177, 0.12); }
+  .header .left {
+    padding-left: 7rem;
+    width: 40%; }
+    .header .left i {
+      color: #0d6efd; }
+  .header .center {
+    overflow: hidden;
+    width: 40%; }
+    .header .center li a {
+      float: right;
+      color: #777777;
+      text-transform: capitalize;
+      transition: 0.5s; }
+      .header .center li a:hover {
+        color: #0d6efd; }
+    .header .center li a:last-child {
+      margin-right: 4rem; }
+  .header .right {
+    background: #f9f8ff;
+    width: 20%;
+    color: #bbbbbb;
+    text-decoration: none;
+    text-transform: capitalize; }
+
 table {
   width: 100%;
   background: white; }
@@ -7138,31 +7179,44 @@ table {
   padding-left: 100px;
   padding-right: 50px; }
 
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
 .form-select:focus, .form-control:focus {
   box-shadow: none; }
 
-.sidebarRight {
+.sidebar-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20%;
   background: #f9f8ff;
-  padding-top: 5rem; }
-  .sidebarRight div {
+  padding-top: 5rem;
+  height: 100vh;
+  z-index: -1; }
+  .sidebar-right div {
     margin-top: 30px; }
-  .sidebarRight h5, .sidebarRight .h5 {
+  .sidebar-right h5, .sidebar-right .h5 {
     font-weight: bold;
     color: #dce1ff; }
-  .sidebarRight .title {
+  .sidebar-right .title {
     font-weight: bold;
     text-transform: capitalize;
     font-size: 1rem;
     color: #bbbbbb;
     padding-bottom: 10px; }
-  .sidebarRight .data {
+  .sidebar-right .data {
     font-weight: bold;
     font-size: 1.5rem; }
 
 .sidebar-left {
+  position: fixed;
   box-shadow: 0 2px 20px 8px rgba(126, 142, 177, 0.12);
   width: 65px;
-  position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   height: 100vh;

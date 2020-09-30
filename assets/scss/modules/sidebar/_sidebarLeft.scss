@@ -1,7 +1,8 @@
 .sidebar-left {
+  position: fixed;
   box-shadow: 0 2px 20px 8px rgba(126, 142, 177, 0.12);
   width: 65px;
-  position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   height: 100vh;
